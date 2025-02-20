@@ -21,19 +21,6 @@ def clean_data(filename):
             for category in category1List:
                 print(category1,category)
                 for line in madLib:
-                    #line = line.split(" ")
-                    # #print(line)
-                    # for i in range (len(line)):
-                    #     #print(word)
-                    #     if ((line[i] == ("<" + category1.upper() + ">")) or (line[i] == ("<" + category1.upper() + ">,")) or (line[i] == ("<" + category1.upper() + ">."))):
-                    #         if deb: print('match')
-                    #         line[i] = category1List[n_counter]
-                    #         n_counter +=1
-                    # if deb: print(line)
-                    # madLib1.append(' '.join(line))
-                    # if deb: print(madLib1)
-                #print(numOfCategories)
-                #print(category1Line)
                     print(line)
                     match = re.search(category1,line,re.IGNORECASE)
                     if match:
